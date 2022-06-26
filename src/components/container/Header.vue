@@ -1,5 +1,5 @@
 <template>
-    <header class="el-header" :style="{ height }">
+    <header class="al-header" :style="{ height }">
         <slot />
     </header>
 </template>
@@ -19,7 +19,7 @@ withDefaults(defineProps<Props>(), {
 })
 </script>
 <style lang="scss">
-@import '../../styles/mixin.scss';
+@import '../styles/mixin.scss';
 @include b(header){
     padding: $--header-padding;
     box-sizing: border-box;

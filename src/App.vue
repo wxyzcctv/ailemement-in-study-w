@@ -1,7 +1,28 @@
+
 <template>
-<al-container>
-    <al-header>Header</al-header>
-</al-container>
+    <al-container>
+        <al-header>Header</al-header>
+        <al-main>Main</al-main>
+        <al-footer>Footer</al-footer>
+    </al-container>
+    <hr>
+
+    <al-container>
+        <al-header>Header</al-header>
+        <al-container>
+            <al-aside width="200px">Aside</al-aside>
+            <al-main>Main</al-main>
+        </al-container>
+    </al-container>
+    <hr>
+    <al-container>
+        <al-aside width="200px">Aside</al-aside>
+        <al-container>
+            <al-header>Header</al-header>
+            <al-main>Main</al-main>
+            <al-footer>Footer</al-footer>
+        </al-container>
+    </al-container>
 </template>
 
 <script setup lang="ts">
@@ -9,42 +30,43 @@
 </script>
 
 <style>
-body{
+body {
     width: 1000px;
     margin: 10px auto;
 }
-.el-header,
-.el-footer {
-  background-color: #b3c0d1;
-  color: #333;
-  text-align: center;
-  line-height: 60px;
+
+.al-header,
+.al-footer {
+    background-color: #b3c0d1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
 }
 
-.el-aside {
-  background-color: #d3dce6;
-  color: #333;
-  text-align: center;
-  line-height: 200px;
+.al-aside {
+    background-color: #d3dce6;
+    color: #333;
+    text-align: center;
+    line-height: 200px;
 }
 
-.el-main {
-  background-color: #e9eef3;
-  color: #333;
-  text-align: center;
-  line-height: 160px;
+.al-main {
+    background-color: #e9eef3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
 }
 
-body > .el-container {
-  margin-bottom: 40px;
+body>.al-container {
+    margin-bottom: 40px;
 }
 
-.el-container:nth-child(5) .el-aside,
-.el-container:nth-child(6) .el-aside {
-  line-height: 260px;
+.al-container:nth-child(5) .al-aside,
+.al-container:nth-child(6) .al-aside {
+    line-height: 260px;
 }
 
-.el-container:nth-child(7) .el-aside {
-  line-height: 320px;
+.al-container:nth-child(7) .al-aside {
+    line-height: 320px;
 }
 </style>

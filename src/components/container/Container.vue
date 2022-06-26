@@ -1,6 +1,6 @@
 <template>
     <section 
-        class="el-container"
+        class="al-container"
         :class="{ 'is-vertical': isVertical }"
     >
         <slot />
@@ -34,7 +34,7 @@ const isVertical = computed(()=>{
 
 </script>
 <style lang="scss">
-@import '../../styles/mixin.scss';
+@import '../styles/mixin.scss';
 @include b(container) {
     display: flex;
     flex-direction: row;
