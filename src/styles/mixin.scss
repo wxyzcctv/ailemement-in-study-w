@@ -1,0 +1,21 @@
+$namespace: 'al';
+$state-prefix: 'is-';
+
+$--header-padding: 0 20px !default;
+
+// bem
+@mixin b($block) {
+    $B: $namespace + '-' + $block !global;
+    .#{$B} {
+        @content;
+    }
+}
+
+// 添加ben后缀
+@mixin when($state) {
+    @at-root {
+        &.#{$state-prefix + $state} {
+            @content;
+        }
+    }
+}
