@@ -23,6 +23,17 @@
             <al-footer>Footer</al-footer>
         </al-container>
     </al-container>
+    <hr>
+    <al-button type="primary">
+        按钮
+    </al-button>
+    <al-button type="success">
+        按钮
+    </al-button>
+    <al-button>按钮</al-button>
+    <al-button size="small">
+        按钮
+    </al-button>
 </template>
 
 <script setup lang="ts">
